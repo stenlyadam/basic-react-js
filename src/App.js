@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import HelloWorld from "./HelloWorld";
+import Header from "./Header";
+import { useState, useEffect } from "react";
 
+//Comment outside JSX
 function App() {
+  const [hello, setHello] = useState("Hello World");
+  const [students, setStudents] = useState([]);
+  // let hello = "Hello World";
+
+  const handleClick = () => {
+    // hello = "Selamat Datang";
+    setHello("Selamat Datang");
+  };
+
+  console.log("Component is rendered");
+
+  useEffect(() => {
+    console.log("Component did mount");
+  }, []);
+
+  useEffect(() => {
+    console.log("Component did update");
+  }, [hello]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Comment inside JSX */}
+      <h1>{hello}</h1>
+      <HelloWorld
+        text="Hello World"
+        subTitle="Welcome to my website"
+        number={20}
+        handleClick={handleClick}
+      />
+      {/* <HelloWorld text="Welcome" />
+      <Header>
+        <p>This is header</p>
+        <p>This is header</p>
+        <p>This is header</p>
+      </Header> */}
+    </>
   );
 }
 
