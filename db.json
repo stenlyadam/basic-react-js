@@ -1,0 +1,48 @@
+{
+  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" },
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@mail.com",
+      "username": "johndoe"
+    },
+    {
+      "id": 2,
+      "name": "Leanne Graham",
+      "email": "Sincere@april.biz",
+      "username": "Bret"
+    },
+    {
+      "id": 3,
+      "name": "Ervin Howell",
+      "email": "Shanna@melissa.tv",
+      "username": "Antonette"
+    },
+    {
+      "id": 4,
+      "name": "Clementine Bauch",
+      "email": "Nathan@yesenia.net",
+      "username": "Samantha"
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "title": "Join the system 1",
+      "subTitle": "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design."
+    },
+    {
+      "id": 2,
+      "title": "Join the system 2",
+      "subTitle": "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design."
+    },
+    {
+      "id": 3,
+      "title": "Join the system 3",
+      "subTitle": "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design."
+    }
+  ]
+}
